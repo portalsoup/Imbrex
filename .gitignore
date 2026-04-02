@@ -2,3 +2,4 @@
 *.iml
 src/etc/imbrex/profiles/simpletest/images/itworks3.png
 src/etc/imbrex/profiles/simpletest/images/itworks4.png
+out/
