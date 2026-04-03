@@ -15,7 +15,6 @@ dailyWave() {
     local secondsPerDay=$((60 * 60 * 24))
     local secondsIntoDay=$(( (epoch + offsetSeconds) % secondsPerDay ))
 
-    # Compute cosine using awk
     awk -v t="$secondsIntoDay" -v s="$secondsPerDay" '
         BEGIN {
             pi = 3.14159

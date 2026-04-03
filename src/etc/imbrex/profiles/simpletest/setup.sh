@@ -3,7 +3,7 @@
 # -1 = midnight, 1 = noon
 dayCycleCos=$(dailyWave)
 
-# normalize the range from -1..1, to 30-200
+# normalize the range from -1..1, to 0..100
 normalizedRange=$(normalizeRange \
   -v "$dayCycleCos" \
   -s -1 -S 1 \
