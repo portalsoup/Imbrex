@@ -16,8 +16,10 @@ install:
 uninstall:
 	if [ -f $(HOME)/.local/bin/imbrex ]; then rm $(HOME)/.local/bin/imbrex; fi
 	if [ -d $(HOME)/.local/share/imbrex ]; then rm -r $(HOME)/.local/share/imbrex; fi
-	if [ -d $(HOME)/.config/imbrex ]; then rm -r $(HOME)/.config/imbrex; fi
 	if [ -d $(HOME)/.cache/imbrex ]; then rm -r $(HOME)/.cache/imbrex; fi
+
+delete-profiles:
+	if [ -d $(HOME)/.config/imbrex ]; then rm -r $(HOME)/.config/imbrex; fi
 
 install-demo:
 	mkdir -p $(HOME)/.config/imbrex/profiles/simpletest

@@ -54,7 +54,6 @@ outputFile="$outputDir"/composite.png
 ### Source Helpers ###
 ######################
 source "$scriptsDir"/internal/imbrex_readFileList.sh
-source "$scriptsDir"/internal/imbrex_validate.sh
 
 source "$scriptsDir"/composeImage.sh
 source "$scriptsDir"/createGradient.sh
@@ -64,7 +63,7 @@ source "$scriptsDir"/math.sh
 ##################
 if [ "$printHelpFlag" = true ]; then
     read -r -d '' msg << MSG
-imbrex - Dynamic wallpaper compositor
+imbrex - Profile-driven image compositor.
 
 Usage: $0 [OPTIONS]
 
