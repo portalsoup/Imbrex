@@ -64,7 +64,7 @@ source "$scriptsDir"/math.sh
 ##################
 if [ "$printHelpFlag" = true ]; then
     read -r -d '' msg << MSG
-pswallpaper - Dynamic wallpaper compositor
+imbrex - Dynamic wallpaper compositor
 
 Usage: $0 [OPTIONS]
 
@@ -86,7 +86,7 @@ Options:
   -h            Show this help message.
 
 Description:
-  pswallpaper reads a profile configuration and a set of image layers
+  imbrex reads a profile configuration and a set of image layers
   to generate a composite wallpaper, which is then applied using 'feh'.
 
   Profiles are stored in the config directory under 'profiles/<profile_name>'.
